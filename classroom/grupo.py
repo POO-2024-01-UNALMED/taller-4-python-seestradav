@@ -20,7 +20,7 @@ class Grupo:
         self.listadoAlumnos = estudiantes
 
     def __str__(self):
-       texto=f"grupo de estudiantes: {self._grupo}"
+       texto=f"Grupo de estudiantes: {self._grupo}"
        return texto
 
     @ classmethod
