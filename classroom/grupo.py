@@ -20,18 +20,18 @@ class Grupo:
         self.listadoAlumnos = estudiantes
 
     def __str__(self):
-       texto=f"Grupo de estudiantes: {self._grupo}"
-       return texto
-
+       x=f"Grupo de estudiantes: {self._grupo}"
+       return x
+    @ classmethod
+    def asignarNombre(cls,nombre):
+            cls.grado= nombre
     @ classmethod
     def asignarNombre(cls, nombre="Grado 10"):
         cls.grado = nombre
     @ classmethod
     def asignarNombre(cls, nombre="Grado 4"):
             cls.grado = nombre
-    @ classmethod
-    def asignarNombre(cls,nombre):
-        cls.grado= nombre
+    
     @ classmethod
     def asignarNombre(cls, nombre="Grado 6"):
         cls.grado = nombre
