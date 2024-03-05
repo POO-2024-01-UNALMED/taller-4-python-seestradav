@@ -13,11 +13,11 @@ class Grupo:
             asignatura=Asignatura(asignatura_nombre)
             self._asignaturas.append(asignatura)
 
-    def agregarAlumno(self, alumno, *args):
-        estudiantes=[alumno]
-        for i in args:
-            estudiantes.append(i)
-        self.listadoAlumnos = estudiantes
+    def agregarAlumno(self, alumno, lista=None):
+        if lista==None:
+             lista=[]
+        lista.append(alumno)
+        self.listadoAlumnos=self.listadoAlumnos + lista     
 
     def __str__(self):
        x=f"Grupo de estudiantes: {self._grupo}"
